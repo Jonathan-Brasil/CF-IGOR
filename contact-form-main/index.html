@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Exercício contact-form</title>
+</head>
+<body>
+
+   <main class="container">
+
+    <h1 class="title">Contact Us</h1>
+
+     <form onsubmit="validator()">
+
+        <div class="group-name">
+        <!--First Name-->
+         <div class="first-child">
+            <label for="fname" class="block">First Name *</label>
+            <input id="fname" type="text">
+            <p class="message-error"></p>
+         </div>
+         <!--Last Name-->
+         <div>
+            <label for="lname" class="block">Last Name *</label>
+            <input id="lname" type="text" >
+         </div>
+        </div>
+
+        <!--Email-->
+        <div class="group-email">
+            <label for="email" class="block">Email Address *</label>
+            <input id="email" type="email">
+        </div>
+        <!--Query Type-->
+
+        <fieldset>
+
+            <legend>Query Type *</legend>
+
+            <span>
+                <input id="general" type="radio" name="query">
+                <label class="genquiry" for="general">General Enquiry</label>
+            </span>
+            <span>
+                <input id="support" type="radio" name="query">
+                <label for="support">Support Request</label>
+            </span>
+
+        </fieldset>
+
+        <!--Message-->
+        <div class="group-message">
+          <label for="message" class="block">Message *</label>
+          <textarea id="message" cols="100" rows="5"></textarea>
+        </div>
+        <div class="block">
+
+          <input type="checkbox" id="term">
+          <label for="term">I consent to being contacted by the team *</label>
+
+        </div>
+          
+
+          <button type="button" onclick="validator()">Submit</button>
+
+     </form>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

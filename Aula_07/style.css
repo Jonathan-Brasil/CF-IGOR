@@ -1,0 +1,23 @@
+h1{
+    color: rgb(153, 0, 255);
+}
+
+.container-1{
+    background-color: rgb(88, 88, 88);
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-width: 5px;
+    border-color: crimson;
+ 
+}
+
+.nome{
+    color: aliceblue;
+}
+
+.sobrenome{
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+}

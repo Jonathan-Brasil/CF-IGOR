@@ -1,0 +1,27 @@
+/*Tipo block*/
+h1{
+    display: block;
+    background-color: brown;
+    height: 100px;
+    width: 60px;
+}
+
+p{
+    background-color: burlywood;
+}
+/*Tipo inline*/
+span{
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+}
+.span2{
+    background-color: coral;
+}
+
+a{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: darkolivegreen;
+}

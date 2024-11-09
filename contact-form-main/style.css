@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+/*Primária*/
+--Green-200: hsl(148, 38%, 91%); /*lighter*/
+--Green-600: hsl(169, 82%, 27%); /*medium*/
+--Red: hsl(0, 66%, 54%);
+/*Neutra*/
+--White: hsl(0, 0%, 100%);
+--Grey-500: hsl(186, 15%, 59%); /*medium*/
+--Grey-900: hsl(187, 24%, 22%); /*darker*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Green-200);
+}
+
+.container{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.block{
+    display: block;
+}
+
+.group-name{
+    display: flex;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+input[type = 'text'],
+input[type='email'],
+textarea{
+    border: 1px solid var(--Green-600);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.first-child{
+    margin-right: 20px;
+}
+
+fieldset{
+    border: none;
+}
+
+.group-name,
+.group-email,
+.group-message{
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: var(--Green-600);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--White);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#message{
+
+    width: 100%;
+}
+
+.error{
+    border: 1px solid var(--Red) !important;
+}
+
+.message-error{
+    color: var(--Red);
+}
+
+span{
+    border: 1px solid var(--Green-600);
+    border-radius: 5px;
+    padding: 1px;
+}
+
